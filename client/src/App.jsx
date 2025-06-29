@@ -21,8 +21,8 @@ const App = () => {
   
   return (
     <div className='text-default min-h-screen bg-white' >
-      {isEducatorRoute && <Navbar />}
-      <Navbar />
+      {isEducatorRoute ? <Navbar /> : <Navbar />}
+      {/* <Navbar /> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/course-list' element={<CourseList />} />
